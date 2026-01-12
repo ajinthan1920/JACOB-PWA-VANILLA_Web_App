@@ -1,0 +1,84 @@
+{
+  "centre": "Jacob Wildlife Centre",
+  "lastUpdated": "2026-01-11",
+  "animals": [
+    {
+      "id": "hedgehog",
+      "name": "European Hedgehog",
+      "scientific": "Erinaceus europaeus",
+      "status": "UK Priority Species",
+      "enclosure": "Meadow Edge",
+      "coords": { "lat": 53.4108, "lng": -2.9792 },
+      "image": "assets/img/hedgehog.jpg",
+      "alt": "A hedgehog walking through short grass",
+      "summary": "A small nocturnal insect-eater that may arrive at rescue centres due to injury, dehydration, or habitat fragmentation.",
+      "detail": "Hedgehogs rely on connected green spaces and quiet nesting areas. In urban and suburban settings, they can struggle with barriers between gardens and reduced insect food sources.",
+      "helpTip": "Leave a 13cm x 13cm gap in fences or gates (a “hedgehog highway”) so they can move between gardens safely."
+    },
+    {
+      "id": "badger",
+      "name": "European Badger",
+      "scientific": "Meles meles",
+      "status": "Protected",
+      "enclosure": "Woodland Bank",
+      "coords": { "lat": 53.4112, "lng": -2.9786 },
+      "image": "assets/img/badger.jpg",
+      "alt": "A badger in woodland undergrowth",
+      "summary": "A strong, social mammal that lives in family groups and uses underground setts with multiple entrances.",
+      "detail": "Badgers are mainly active at night and can be sensitive to disturbance near sett sites. They play an important role in woodland ecosystems through digging and foraging activity.",
+      "helpTip": "Never block or disturb sett entrances. Keep dogs on leads near woodland edges where setts may be present."
+    },
+    {
+      "id": "barnowl",
+      "name": "Barn Owl",
+      "scientific": "Tyto alba",
+      "status": "Amber List",
+      "enclosure": "Aviary Row",
+      "coords": { "lat": 53.4104, "lng": -2.9787 },
+      "image": "assets/img/barn-owl.jpg",
+      "alt": "A barn owl perched on a branch",
+      "summary": "Often brought in following vehicle collisions, storms, or when young birds are found grounded and unable to fly well.",
+      "detail": "Barn owls hunt low over grassland and field margins, relying heavily on healthy small mammal populations. Quiet, dark roost spaces are important during recovery.",
+      "helpTip": "If you find an injured owl or bird of prey, contact a wildlife rescue immediately—avoid feeding, as the wrong diet can cause harm."
+    },
+    {
+      "id": "fox",
+      "name": "Red Fox",
+      "scientific": "Vulpes vulpes",
+      "status": "Widespread",
+      "enclosure": "Quiet Corner",
+      "coords": { "lat": 53.4109, "lng": -2.9779 },
+      "image": "assets/img/fox.jpg",
+      "alt": "A red fox looking towards the camera",
+      "summary": "Highly adaptable and found in both rural and urban areas; young cubs can become separated after disturbance.",
+      "detail": "Foxes are opportunistic feeders and may approach residential areas at night. Young foxes are commonly misunderstood—many are healthy and simply exploring.",
+      "helpTip": "If you see a cub alone, observe from a distance first. Adults may be nearby and return later—only intervene if there are clear signs of injury."
+    },
+    {
+      "id": "otter",
+      "name": "Eurasian Otter",
+      "scientific": "Lutra lutra",
+      "status": "Protected",
+      "enclosure": "Riverside Pool",
+      "coords": { "lat": 53.4102, "lng": -2.9796 },
+      "image": "assets/img/otter.jpg",
+      "alt": "An otter near the water’s edge",
+      "summary": "A semi-aquatic mammal that depends on clean waterways; threats include road traffic near rivers and water pollution.",
+      "detail": "Otters require connected river corridors with good cover and healthy fish stocks. Even small amounts of pollution can damage habitats and reduce food availability.",
+      "helpTip": "Keep waterways clean: dispose of litter responsibly, and report signs of pollution (foam, strong odours, dead fish) to local authorities."
+    },
+    {
+      "id": "red-squirrel",
+      "name": "Red Squirrel",
+      "scientific": "Sciurus vulgaris",
+      "status": "UK Priority Species",
+      "enclosure": "Pine Patch",
+      "coords": { "lat": 53.4110, "lng": -2.9799 },
+      "image": "assets/img/red-squirrel.avif",
+      "alt": "A red squirrel holding food on a tree branch",
+      "summary": "A native woodland squirrel under pressure from habitat change and competition; conservation focuses on protecting suitable woodland areas.",
+      "detail": "Red squirrels thrive in conifer and mixed woodland where food sources and nesting sites are stable. Local conservation programmes focus on habitat protection and monitoring.",
+      "helpTip": "Use squirrel-friendly feeders in appropriate areas and avoid leaving food that attracts pests. Report injured squirrels to a local wildlife rescue."
+    }
+  ]
+}

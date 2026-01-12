@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#22c55e" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Favourites</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <div class="brand">
+        <h1>FAVOURITES</h1>
+        <small>Saved locally on your device (localStorage)</small>
+      </div>
+      <span class="badge" id="netStatus">…</span>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation (tablet)">
+      <a data-nav href="index.html">HOME</a>
+      <a data-nav href="animals.html">ANIMALS</a>
+      <a data-nav href="map.html">MAP</a>
+      <a data-nav href="help.html">HELP WILDLIFE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="card">
+    <div class="section-title">
+      <div>
+        <h2>Your saved animals</h2>
+        <p>Use favourites to build a quick “visit shortlist”. You can remove items or clear everything.</p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="btn soft" type="button" onclick="history.back()">← Back</button>
+        <a class="btn" href="animals.html">Browse animals</a>
+        <button class="btn danger" id="clearBtn" type="button">Clear all</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid cols-2" id="favGrid" style="margin-top:14px;" aria-live="polite"></section>
+
+  <footer class="site-footer">
+  <div class="footer-band">
+    <div class="footer-inner">
+      <div>
+        <strong>Your shortlist</strong>
+        <p>
+          Save animals you want to find again during your visit. Your favourites stay on this device unless you clear them.
+        </p>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="animals.html">Animals</a>
+          <a href="map.html">Map</a>
+          <a href="help.html">Help Wildlife</a>
+          <a href="kids.html">Kids</a>
+        </div>
+      </div>
+
+      <div>
+        <strong>Tip</strong>
+        <p>
+          Open a favourite → “Show on map” → use the marker list if tiles load slowly.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <small>© 2026 • Jacob Wildlife Centre</small>
+        <small>Favourites • Offline-friendly</small>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+<nav class="bottom-nav" aria-label="Bottom navigation (mobile)">
+  <div class="inner">
+    <a data-nav href="index.html">🏠<span>Home</span></a>
+    <a data-nav href="animals.html">🦔<span>Animals</span></a>
+    <a data-nav href="map.html">🗺️<span>Map</span></a>
+    <a data-nav href="help.html">🧤<span>Help</span></a>
+  </div>
+</nav>
+
+<script src="js/app.js"></script>
+<script src="js/favourites.js"></script>
+</body>
+</html>

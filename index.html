@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#2b59ff" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Jacob Wildlife Centre</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <div class="brand">
+        <h1>JACOB WILDLIFE CENTRE</h1>
+        <small>Wildlife Care • Conservation Learning • Visitor-Friendly Guide</small>
+      </div>
+      <span class="badge" id="netStatus">…</span>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation (tablet)">
+      <a data-nav href="index.html">HOME</a>
+      <a data-nav href="animals.html">ANIMALS</a>
+      <a data-nav href="map.html">MAP</a>
+      <a data-nav href="help.html">HELP WILDLIFE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <article class="card hero-card">
+
+      <picture>
+        <source srcset="assets/img/hero-landscape.jpg" media="(orientation: landscape)">
+        <source srcset="assets/img/hero-portrait.jpg" media="(max-width: 600px)">
+        <img class="photo"
+             src="assets/img/hero-portrait.jpg"
+             alt="Colourful bird feathers representing wildlife care and conservation"
+             loading="lazy"
+             decoding="async">
+      </picture>
+
+      <header class="hero-header">
+        <h2>Rescue, Rehabilitate, Release</h2>
+        <p class="hero-lead">
+          Jacob Wildlife Centre supports British wildlife through rescue response,
+          rehabilitation care, and safe release back into natural habitats.
+        </p>
+      </header>
+
+      <nav class="hero-actions" aria-label="Primary actions">
+        <a class="btn primary" href="animals.html">Explore animals</a>
+        <a class="btn good" href="map.html">View centre map</a>
+        <a class="btn soft" href="kids.html">Kids activities</a>
+        <a class="btn" href="favourites.html">Saved favourites</a>
+      </nav>
+
+      <!-- INSTALL + ORIENTATION -->
+      <div class="grid cols-2 hero-notes">
+
+        <section class="notice">
+          <h3 class="notice-title">Install this app</h3>
+          <p>
+            Installing adds this guide to your device for quicker access
+            and offline use after the first visit.
+          </p>
+
+          <div class="install-row">
+            <button class="btn primary" id="installBtn" hidden type="button">
+              Install App
+            </button>
+            <span id="installState" class="install-state"></span>
+            <a class="btn" href="help.html#pwa">Why install?</a>
+          </div>
+        </section>
+
+        <section class="notice">
+          <h3 class="notice-title">Device orientation</h3>
+          <p>
+            Rotate your device on tablets or in landscape mode
+            to see more information displayed side-by-side.
+          </p>
+        </section>
+
+      </div>
+    </article>
+
+    <!-- ASIDE -->
+    <aside class="grid">
+
+      <section class="card">
+        <h3>Centre snapshot</h3>
+        <p>
+          Our conservation work focuses on habitat awareness,
+          wildlife rehabilitation, and visitor education.
+        </p>
+        <ul class="pill-row">
+          <li class="pill">Offline ready</li>
+          <li class="pill">Geolocation</li>
+          <li class="pill">Local favourites</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Plan your visit</h3>
+        <p>
+          Opening times: <strong>09:30–16:30</strong> (Mon–Sat)<br><br>
+          Quiet hours: <strong>12:30–13:30</strong>
+        </p>
+
+        <nav class="inline-actions">
+          <a class="btn soft" href="animals.html#hedgehog">Hedgehog record</a>
+          <a class="btn soft" href="map.html?focus=otter">Find otter</a>
+        </nav>
+      </section>
+
+      <section class="card">
+        <h3>Accessibility & safety</h3>
+        <p>
+          This app adapts automatically to your device’s light or dark mode. <br><br>
+          Please avoid touching or feeding wildlife unless advised by trained staff.
+        </p>
+      </section>
+
+    </aside>
+  </section>
+
+</main>
+
+
+  <footer class="site-footer">
+    <div class="footer-band">
+      <div class="footer-inner">
+        <div>
+          <strong>Jacob Wildlife Centre</strong>
+          <p>
+            Explore animal profiles, find habitats around the centre, and learn safe ways to help British wildlife.
+          </p>
+        </div>
+        <div>
+          <strong>Explore</strong>
+          <div class="footer-links">
+            <a href="animals.html">Animals</a>
+            <a href="map.html">Map</a>
+            <a href="help.html">Help Wildlife</a>
+            <a href="kids.html">Kids</a>
+            <a href="favourites.html">Favourites</a>
+          </div>
+        </div>
+        <div>
+          <strong>Contact</strong>
+          <p>Phone: 0151 000 0000</p>
+          <p>Email: info@jacobwildlife.com</p>
+          <p>Location: Liverpool area</p>
+        </div>
+
+        <div class="footer-bottom">
+          <small>© 2026 • Jacob Wildlife Centre</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<nav class="bottom-nav" aria-label="Bottom navigation (mobile)">
+  <div class="inner">
+    <a data-nav href="index.html">🏠<span>Home</span></a>
+    <a data-nav href="animals.html">🦔<span>Animals</span></a>
+    <a data-nav href="map.html">🗺️<span>Map</span></a>
+    <a data-nav href="help.html">🧤<span>Help</span></a>
+  </div>
+</nav>
+
+<script src="js/app.js"></script>
+</body>
+</html>

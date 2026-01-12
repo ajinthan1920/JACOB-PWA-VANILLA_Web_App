@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#2b59ff" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>ANIMALS – Jacob Wildlife Centre</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <div class="brand">
+        <h1>ANIMALS</h1>
+        <small>Explore species profiles, locations, and practical support advice</small>
+      </div>
+      <span class="badge" id="netStatus">…</span>
+    </div>
+
+    <nav class="top-nav" aria-label="Main navigation (tablet)">
+      <a data-nav href="index.html">HOME</a>
+      <a data-nav href="animals.html">ANIMALS</a>
+      <a data-nav href="map.html">MAP</a>
+      <a data-nav href="help.html">HELP WILDLIFE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <!-- Page intro -->
+  <section class="card">
+    <div class="section-title">
+      <div>
+        <h2>Animal field notes</h2>
+        <p>
+          Search by common name, scientific name, or enclosure area. Open a record for more detail and jump straight to
+          its map location.
+        </p>
+      </div>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="btn soft" type="button" onclick="history.back()">← Back</button>
+        <a class="btn good" href="map.html">Open map</a>
+        <a class="btn primary" href="favourites.html" aria-label="Open favourites">⭐ Favourites</a>
+      </div>
+    </div>
+
+    <!-- Quick info chips -->
+    <div class="grid cols-3" style="margin-top:14px;">
+      <div class="notice">
+        <strong style="color:inherit;">Visitor reminder</strong>
+        <p style="margin:6px 0 0;">
+          Keep noise low near recovery areas. Please follow staff signage and avoid flash near enclosures.
+        </p>
+      </div>
+
+      <div class="notice">
+        <strong style="color:inherit;">Deep links</strong>
+        <p style="margin:6px 0 0;">
+          Share a specific record using links like <em>animals.html#hedgehog</em>.
+        </p>
+      </div>
+
+      <div class="notice">
+        <strong style="color:inherit;">If you find wildlife</strong>
+        <p style="margin:6px 0 0;">
+          Keep distance and contact a wildlife rescue centre. Do not feed or handle animals unless advised.
+        </p>
+      </div>
+    </div>
+
+    <!-- Search + filter -->
+    <div class="grid cols-2" style="margin-top:14px; align-items:end;">
+      <div>
+        <label for="searchBox" class="pill" style="margin-bottom:8px;">Search</label>
+        <input id="searchBox" type="search"
+               placeholder="Try: hedgehog, Tyto alba, Aviary Row…"
+               autocomplete="off"
+               aria-label="Search animals by name, scientific name or enclosure">
+        <p style="margin:8px 0 0;font-size:0.95rem;">
+          Tip: search also matches enclosure names and summary keywords.
+        </p>
+      </div>
+
+      <div>
+        <label for="filterStatus" class="pill" style="margin-bottom:8px;">Filter by status</label>
+        <select id="filterStatus" aria-label="Filter animals by conservation status">
+          <option value="all">All statuses</option>
+          <option value="UK Priority Species">UK Priority Species</option>
+          <option value="Protected">Protected</option>
+          <option value="Amber List">Amber List</option>
+          <option value="Widespread">Widespread</option>
+        </select>
+        <p style="margin:8px 0 0;font-size:0.95rem;">
+          Records are based on the centre’s current rescue and education list.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="card" style="margin-top:14px;">
+    <div class="section-title">
+      <div>
+        <h3 style="margin:0;">Results</h3>
+        <p style="margin-top:6px;">
+          Tap “View details” for a full record and support advice.
+        </p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn soft" href="help.html">Safety guide</a>
+        <a class="btn" href="kids.html">Kids tips</a>
+      </div>
+    </div>
+
+    <section class="grid cols-2" id="animalsGrid" style="margin-top:14px;" aria-live="polite"></section>
+  </section>
+
+  <!-- Detail panel -->
+  <section class="card" id="detailCard" style="margin-top:14px;display:none;" aria-labelledby="detailHeading">
+    <div class="section-title">
+      <div>
+        <h2 id="detailHeading">Animal record</h2>
+        <p>Species details, practical support advice, and a direct link to the map.</p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="btn" type="button" id="closeDetail">Close</button>
+        <a class="btn soft" href="#animalsGrid">Back to results</a>
+      </div>
+    </div>
+
+    <div id="detailContent" style="margin-top:10px;"></div>
+  </section>
+
+  <footer class="site-footer">
+  <div class="footer-band">
+    <div class="footer-inner">
+      <div>
+        <strong>Jacob Wildlife Centre</strong>
+        <p>
+          Explore species profiles, find habitats on the map, and learn safe, respectful ways to support British wildlife.
+        </p>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="animals.html">Animals</a>
+          <a href="map.html">Map</a>
+          <a href="help.html">Help Wildlife</a>
+          <a href="kids.html">Kids</a>
+          <a href="favourites.html">Favourites</a>
+        </div>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <p>Phone: 0151 000 0000</p>
+        <p>Email: info@jacobwildlife.com</p>
+        <p>Location: Liverpool area</p>
+      </div>
+
+      <div class="footer-bottom">
+        <small>© 2026 • Jacob Wildlife Centre</small>
+        <small>Animals • Search • Filter • Favourites</small>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+<nav class="bottom-nav" aria-label="Bottom navigation (mobile)">
+  <div class="inner">
+    <a data-nav href="index.html">🏠<span>Home</span></a>
+    <a data-nav href="animals.html">🦔<span>Animals</span></a>
+    <a data-nav href="map.html">🗺️<span>Map</span></a>
+    <a data-nav href="help.html">🧤<span>Help</span></a>
+  </div>
+</nav>
+
+<script src="js/app.js"></script>
+<script src="js/animals.js"></script>
+</body>
+</html>
